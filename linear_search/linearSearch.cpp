@@ -90,12 +90,6 @@ float sequentialSearchStatistics(int size, int iterations){
         
         int tmp = counter;
         int target_index = sequentialSearch(target, arr, size, counter);
-        
-        /*cout << "S:" << tmp << "+" <<counter-tmp << " T:" << counter << "\n";
-        for(int i=0; i<size; i++){
-            cout << arr[i] << " ";
-        }
-        cout << "||" << target << "\n"; */
         delete[] arr;
      }
     return (float)counter/iterations;
